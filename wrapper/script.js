@@ -184,7 +184,9 @@ function download()
 	zip.file("data.json", mapp);
 	mapp="data = \'";
 	zip.file("index.html", html_content);
-	zip.file("mapping.js", mapping_js);
+	zip.file("index.js", js_content);
+  zip.file("index.css", css_content);
+  zip.file("mapping.js", mapping_js);
 	zip.file("manifest.webapp", manifest);
 	zip.generateAsync({type: "blob"}).then(function(content) {
   	saveAs(content, gameName+".zip");
