@@ -61,4 +61,12 @@ if (e.key == "Backspace") {
             window.close();
         }
     }
+    if (e.key == "Backspace") {
+        // Handle if you want to go to previous menu or to exit directly;
+        e.preventDefault(); // to prevent app from exiting
+        let exit = confirm("Are your sure want to exit");
+        if (true) {
+            window.close();
+        }
+    }
 }

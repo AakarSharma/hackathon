@@ -11,10 +11,6 @@
   }
 
   Mario.Util.inherits(Bcoin, Mario.Entity);
-
-  //I'm not sure whether it makes sense to use an array for vel and acc here
-  //in order to keep with convention, or to just use a single value, since
-  //it's literally impossible for these to move left or right.
   Bcoin.prototype.spawn = function() {
     sounds.coin.currentTime = 0.05;
     sounds.coin.play();
