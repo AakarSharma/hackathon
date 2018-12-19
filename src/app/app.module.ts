@@ -11,6 +11,7 @@ import {AngularFireStorageModule} from 'angularfire2/storage';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { ProfilePage } from '../pages/profile/profile';
 
 var firebaseAuth = {
   apiKey: "AIzaSyACWvceKT1lF9iD6i2ZDFHax34cHkco2ic",
@@ -37,7 +38,8 @@ var firebaseAuth = {
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    ProfilePage
   ],
   providers: [
     StatusBar,
