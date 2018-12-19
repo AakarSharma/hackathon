@@ -74,11 +74,9 @@ window.addEventListener("load", function() {
 	    console.log("Event is working");
 	    reader.onload = function () {
 	      var fileContent = reader.result;
-	      html_content=fileContent;
-		  console.log(html_content);
+	      html_content=fileContent+`<script type="text/javascript" src="data.json"></script>s<script type="text/javascript" src="mapping.js"></script>`;
     	}
-    	html_content+=`<script type="text/javascript" src="data.json"></script>`;
-    	html_content+=`<script type="text/javascript" src="mapping.js"></script>`;
+    
 	}
 	
 	document.getElementById("file-upload-css").onchange = function(event) {
